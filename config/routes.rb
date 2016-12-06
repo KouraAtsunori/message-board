@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   root 'messages#index'
-  resource :messages  , only: [:create]
+  resources :messages , except: [:index, :new]
 end
+  
+  # resource :messages  , only: [:create]  20161206 コメントアウト
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
