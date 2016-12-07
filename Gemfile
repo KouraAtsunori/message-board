@@ -45,3 +45,8 @@ group :development do
   gem 'spring'
 end
 
+gem 'sqlite3'
+
+gem 'sqlite3', group: :development
+#　本番ではpostgresssをしようする
+gem 'pg', group: :production
